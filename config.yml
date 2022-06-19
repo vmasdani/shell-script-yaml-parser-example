@@ -1,0 +1,22 @@
+public:
+  jwt_secret: jws
+  master_password: masterpass
+  db_name: authserver
+  server_port: 8083
+  grpc_port: 50060
+
+env:
+  dev:
+    crm_url: http://localhost:9000/crm
+    authserver_frontend_url: http://localhost:9000/authserver
+    gateway_url: http://localhost:9000
+
+  prod:
+    crm_url: https://gw.io.id/crm
+    authserver_frontend_url: https://gw.iotech.my.id/authserver
+    gateway_url: https://gw.io.id
+
+  prod-local:
+    crm_url: http://10.9.1.30:9000/crm
+    authserver_frontend_url: http://10.9.1.30:9000/authserver
+    gateway_url: http://10.9.1.30:9000
